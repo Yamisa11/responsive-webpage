@@ -1,3 +1,65 @@
+body{
+    padding: 80px;
+}
 h1{
     width: 100px
+}
+
+.intro{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.city{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    justify-content: space-around;
+}
+.city p{
+    margin-top: 65px;
+    word-wrap: break-word;
+    width: 300px;
+    font-size: large;
+    text-align: center;
+}
+table{
+    margin: 50px 0px;
+    width: 80%;
+    border: 1px solid #ddd
+
+}
+th,td{
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-size: large;
+}
+.history{
+    display: flex;
+    justify-content: space-around;
+
+}
+.history p{
+    word-wrap: break-word;
+    width: 200px;
+}
+img{
+    border-radius: 1em;
+}
+
+@media  screen and (max-width : 480px) {
+    .intro{
+        flex-direction: column;
+    }
+    .city{
+        display: block;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .history.one{
+        display: inline;
+    }
 }
