@@ -1,16 +1,21 @@
 body{
-    padding: 80px;
+    padding: 60px;
+    background-color: #edf6f9;
 }
 h1{
-    width: 100px;
-    font-size: xx-large;
+    font-size: 50px;
+    padding-top: 60px;
 
 }
+h2{
+    font-size: 30px;
+}
+
 
 .intro{
     display:flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-bottom: 80px;
 }
 .city{
@@ -20,23 +25,33 @@ h1{
     justify-content: space-around;
 }
 .city p{
-    margin-top: 65px;
+    /* margin-top: 65px; */
     word-wrap: break-word;
-    width: 300px;
-    font-size: large;
-    text-align: center;
+    width: 700px;
+    font-size:20px;
+    /* text-align: center; */
+    padding-left: 10px
 
 }
+p{
+    font-size: 18;
+}
+/* #par{
+    width: 300px;
+} */
 table{
-    margin: 50px 0px;
+    margin-top: 50px;
+    margin-left: 7em;
+    margin-bottom: 40px;
     width: 80%;
-    border: 1px solid #ddd
+    border: 1px solid #0e0d0d;
+    border-collapse: collapse;
 
 }
 
 th,td{
     height: 40px;
-    border: 1px solid #ddd;
+    border: 1px solid #585656;
     padding: 5px;
     font-size: large;
 }
@@ -49,26 +64,45 @@ th,td{
     word-wrap: break-word;
     width: 170px;
     margin: 0px 10px;
+    font-size: 20px;
 }
 img{
     border-radius: 1em;
 }
 .one{display: flex;}
+.unique{display: flex;}
+.all img{width: 150px;}
 
 @media  screen and (max-width : 600px) {
     h1{
         width: 100%;
         text-align: center;
+        font-size: 47px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .city p{
+          /* margin-top: 65px; */
+    word-wrap: break-word;
+    width: 300px;
+    font-size:17px;
+    text-align: center;
+    padding-left: 10px
+
     }
     .intro{
         flex-direction: column;
     }
     .intro img{
-        width: 300px;
+        width: 330px;
     }
     #par{
-        width: 300px;
+        width: 330px;
+        height: 247px;
         flex-direction: column;
+    }
+    table{
+        margin-left: 2em;
     }
     
     .city{
@@ -81,11 +115,24 @@ img{
         float:right;
         width: 150px;
     }
-    .one p{
+    .all p{
         word-wrap: break-word;
         width: 130px;
+        font-size: large;
+        padding: 0px 10px;
     }
     .one{
         display: flex;
     }
+    .all{
+        margin-top: 10px;
+    }
+   .all .unique{
+    display: flex;
+    flex-direction: row-reverse;
+   }
+   .all img{
+    width: 150px;
+    
+   }
 }

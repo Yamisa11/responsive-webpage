@@ -12,25 +12,39 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: auto;
   left: 0;
   top: 0;
   font-size: 100%;
+  background-color: #edf6f9;
 }
 table{
-  margin: 50px 0px;
+  margin: 50px 0px 50px 100px;
   width: 80%;
-  border: 1px solid #ddd
+  border-collapse: collapse;
 
 }
 th,td{
   height: 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #8f8c8c;
   padding: 5px;
   font-size: large;
 }
 img{
   border-radius: 1.5em;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#333447;
+}
+.footer p{
+  color: white;
+}
+.land{
+  padding-top: 30px;
 }
 
 /* ROOT FONT STYLES */
@@ -44,16 +58,19 @@ img{
 /* TYPOGRAPHY */
 
 h1 {
-  font-size: 2.5rem;
-  margin-top: 50px;
+  font-size: 50px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 35px;
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 30px;
+  text-align: center;
+  
 }
 
 h4 {
@@ -72,6 +89,17 @@ p {
   font-size: 1.125rem;
   font-weight: 200;
   line-height: 1.8;
+}
+.city .para{
+   margin-left: 30px;
+   word-wrap: break-word;
+   width: 700px;
+   font-size:20px;
+   /* text-align: center; */
+   
+}
+.city {
+  display: flex;
 }
 
 .font-light {
@@ -113,9 +141,9 @@ p {
 /* ==== GRID SYSTEM ==== */
 
 .container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  /* width: 90%; */
+  margin-left: 70px;
+  /* margin-right: 20px; */
 }
 
 .row {
@@ -142,7 +170,7 @@ p {
 .col-10,
 .col-11,
 .col-12 {
-  width: 96%;
+  width: 100%;
 }
 
 .col-1-sm {
@@ -202,7 +230,7 @@ p {
 .hidden-sm {
   display: none;
 }
-@media  screen and (max-width : 500px){
+@media  screen and (max-width : 600px){
     .places .col-6 {
       font-size:medium;
       word-wrap: break-word;
@@ -210,10 +238,13 @@ p {
       float: left;
       text-align: center;
     }
-    /* image{
-      width:70px;
-      float: right;
-    } */
+    .city{
+      display: block;
+    }
+   .city img{
+      width:350px;
+      
+    }
     .places{
       width: 100%;
     }
@@ -222,12 +253,30 @@ p {
       width: 40%;
       margin: 5px;
     }
+    #mountain{
+      width: 350px;
+    }
+    .city .para{
+      word-wrap: break-word;
+    width: 300px;
+    font-size:17px;
+    text-align: center;
+    padding-left: 10px
+    }
+    #cpt{
+      display: none;
+    }
+    table{
+      margin-left: 2em;
+  }
+
+ 
 }
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
-  .container {
-    width: 80%;
-  }
+  /* .container {
+    /* width: 80%; */
+   
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
@@ -285,8 +334,8 @@ p {
 }
 
 @media only screen and (min-width: 60em) { /* 960px */
-  .container {
+  /* .container {
     width: 75%;
     max-width: 60rem;
-  }
+  } */
 }
