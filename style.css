@@ -10,6 +10,14 @@ h1{
 h2{
     font-size: 30px;
 }
+h4{
+    text-align: center;
+}
+.heads{
+    color: #333447;
+    font-size: 35px;
+    text-align: center;
+}
 
 
 .intro{
@@ -62,7 +70,7 @@ th,td{
 }
 .history p{
     word-wrap: break-word;
-    width: 170px;
+    width: 120px;
     margin: 0px 10px;
     font-size: 20px;
 }
@@ -71,7 +79,7 @@ img{
 }
 .one{display: flex;}
 .unique{display: flex;}
-.all img{width: 150px;}
+.all img{width: 120px;}
 
 @media  screen and (max-width : 600px) {
     h1{
@@ -81,10 +89,11 @@ img{
         margin-top: 0px;
         padding-top: 0px;
     }
+  
     .city p{
           /* margin-top: 65px; */
     word-wrap: break-word;
-    width: 300px;
+    width: 290px;
     font-size:17px;
     text-align: center;
     padding-left: 10px
@@ -94,10 +103,10 @@ img{
         flex-direction: column;
     }
     .intro img{
-        width: 330px;
+        width: 300px;
     }
     #par{
-        width: 330px;
+        width: 300px;
         height: 247px;
         flex-direction: column;
     }
@@ -113,7 +122,7 @@ img{
     }
     .one img{
         float:right;
-        width: 150px;
+        width: 120px;
     }
     .all p{
         word-wrap: break-word;
@@ -132,7 +141,7 @@ img{
     flex-direction: row-reverse;
    }
    .all img{
-    width: 150px;
+    width: 100px;
     
    }
 }

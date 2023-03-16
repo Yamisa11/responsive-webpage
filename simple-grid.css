@@ -75,6 +75,7 @@ h3 {
 
 h4 {
   font-size: 1.125rem;
+  text-align: center;
 }
 
 h5 {
@@ -136,6 +137,9 @@ p {
 .land{
   justify-content: center;
   padding-left: 60px;
+}
+.places img{
+  width: 150px;
 }
 
 /* ==== GRID SYSTEM ==== */
@@ -230,38 +234,50 @@ p {
 .hidden-sm {
   display: none;
 }
-@media  screen and (max-width : 600px){
+@media  screen and (max-width : 500px){
+  h1{
+    font-size: 47px;
+  }
+  h1,h2,h4{
+    width: 100%;
+    text-align: center;
+    
+    /* margin-top: 0px;
+    padding-top: 0px; */
+}
     .places .col-6 {
       font-size:medium;
       word-wrap: break-word;
       width: 50%;
       float: left;
-      text-align: center;
+      /* text-align: center; */
     }
     .city{
       display: block;
     }
    .city img{
-      width:350px;
+      width:300px;
       
     }
     .places{
       width: 100%;
     }
     .places .image{
-      float: right;
-      width: 40%;
+      /* float: right; */
+      width: 90px;
       margin: 5px;
     }
+    .places p{
+      font-size: medium;
+    }
     #mountain{
-      width: 350px;
+      width: 300px;
     }
     .city .para{
       word-wrap: break-word;
     width: 300px;
     font-size:17px;
     text-align: center;
-    padding-left: 10px
     }
     #cpt{
       display: none;
@@ -269,6 +285,15 @@ p {
     table{
       margin-left: 2em;
   }
+  .unique{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+   }
+   .footer{
+    text-align: center;
+   }
 
  
 }
