@@ -98,7 +98,7 @@ img{
     width: 290px;
     font-size:17px;
     text-align: center;
-    padding-left: 10px
+    padding-left: 30px
 
     }
     .intro{
@@ -124,13 +124,13 @@ img{
     }
     .one img{
         float:right;
-        width: 120px;
+        width: 130px;
     }
     .all p{
         word-wrap: break-word;
-        width: 130px;
-        font-size: large;
-        padding: 0px 10px;
+        width: 170px;
+        font-size: 21px;
+        padding: 0px 20px;
     }
     .one{
         display: flex;
@@ -142,8 +142,8 @@ img{
     display: flex;
     flex-direction: row-reverse;
    }
-   .all img{
+   /* .all img{
     width: 100px;
     
-   }
+   } */
 }
