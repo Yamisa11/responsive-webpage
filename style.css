@@ -82,6 +82,8 @@ img{
 .all img{width: 120px;}
 
 @media  screen and (max-width : 600px) {
+    body{padding: 0px;
+    margin-left: 20px;}
     h1{
         width: 100%;
         text-align: center;

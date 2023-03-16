@@ -236,7 +236,7 @@ p {
 }
 @media  screen and (max-width : 500px){
   .container{
-    margin-left: 35px;
+    margin-left: 30px;
   }
   h1{
     font-size: 47px;
