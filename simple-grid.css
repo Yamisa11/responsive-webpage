@@ -234,16 +234,20 @@ p {
 .hidden-sm {
   display: none;
 }
-@media  screen and (max-width : 500px){
+@media  screen and (max-width : 700px){
   .container{
     margin-left: 20px;
+  }
+  .ind{
+    padding: auto;
+    word-wrap: break-word;
   }
   h1{
     font-size: 47px;
   }
   h1,h2,h4{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     
     /* margin-top: 0px;
     padding-top: 0px; */
@@ -257,7 +261,76 @@ p {
     }
     .city{
       display: block;
+      margin-left: 10px;
     }
+   .city img{
+      width:100%;}
+    .places{
+      width: 100%;
+    }
+    .places .image{
+      /* float: right; */
+      width: 90px;
+      margin: 5px;
+    }
+    .places p{
+      font-size: 1.3em;
+    }
+    #mountain{
+      width: 95%;
+    }
+    .city .para{
+      word-wrap: break-word;
+      margin-left: 0px;
+    width: 100%;
+    font-size:17px;
+    text-align: center;
+    }
+    #cpt{
+      display: none;
+    }
+    table{
+      margin-left: 2em;
+  }
+  .unique{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+   }
+   .footer{
+    text-align: center;
+    position:absolute;
+   }
+
+ 
+}
+
+@media (min-width: 710px) and (max-width: 870px) { 
+  .ind{
+    padding: auto;
+    word-wrap: break-word;
+  }
+  h1{
+    font-size: 47px;
+  }
+  h1,h2,h4{
+    width: 100%;
+    /* text-align: center; */
+    
+    /* margin-top: 0px;
+    padding-top: 0px; */
+}
+    .places .col-6 {
+      font-size:medium;
+      word-wrap: break-word;
+      width: 50%;
+      float: left;
+      /* text-align: center; */
+    }
+    /* .city{
+      display: block;
+    } */
    .city img{
       width:350px;
       height: 225px;
@@ -290,21 +363,14 @@ p {
       margin-left: 2em;
   }
   .unique{
-    display: flex;
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
    }
    .footer{
     text-align: center;
+    position: fixed;
    }
-
- 
-}
-
-@media only screen and (min-width: 33.75em) {  /* 540px */
-  /* .container {
-    /* width: 80%; */
    
 }
 

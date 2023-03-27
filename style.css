@@ -1,21 +1,27 @@
 body{
-    padding: 60px;
+    
     background-color: #edf6f9;
+    padding: auto;
+    margin: auto;
+    /* font-size: 1.1em; */
+}
+.intro img{
+    width: 400px;
 }
 h1{
-    font-size: 50px;
+    font-size: 2.2em;
     padding-top: 60px;
 
 }
 h2{
-    font-size: 30px;
+    font-size: 1.75em;
 }
 h4{
     text-align: center;
 }
 .heads{
     color: #333447;
-    font-size: 35px;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -36,13 +42,12 @@ h4{
     /* margin-top: 65px; */
     word-wrap: break-word;
     width: 700px;
-    font-size:20px;
+    font-size:1.6em;
     /* text-align: center; */
-    padding-left: 10px
 
 }
 p{
-    font-size: 18;
+    font-size: 1.6em;
 }
 /* #par{
     width: 300px;
@@ -61,7 +66,7 @@ th,td{
     height: 40px;
     border: 1px solid #585656;
     padding: 5px;
-    font-size: large;
+    font-size: 1.5em;
 }
 .history{
     display: flex;
@@ -70,22 +75,31 @@ th,td{
 }
 .history p{
     word-wrap: break-word;
-    width: 120px;
+    width: 200px;
     margin: 0px 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 img{
     border-radius: 1em;
 }
 .one{display: flex;}
 .unique{display: flex;}
-.all img{width: 120px;}
+/* .all img{width: 65%;} */
 
-@media  screen and (max-width : 600px) {
+@media  screen and (max-width : 780px) {
+    .language p{
+        word-wrap: break-word;
+        width: 80%;
+    }
+    .heads{
+        text-align: left;
+    }
     body{padding: 0px;
-    margin-left: 20px;}
+    margin-left: 20px;
+    font-size: 17px;
+}
     h1{
-        width: 100%;
+        width: 80%;
         text-align: center;
         font-size: 47px;
         margin-top: 0px;
@@ -95,7 +109,7 @@ img{
     .city p{
           /* margin-top: 65px; */
     word-wrap: break-word;
-    width: 290px;
+    width: 70%;
     font-size:17px;
     text-align: center;
     padding-left: 30px
@@ -105,15 +119,14 @@ img{
         flex-direction: column;
     }
     .intro img{
-        width: 350px;
+        width: 80%;
     }
     #par{
-        width: 350px;
-        height: 247px;
+        width: 80%;
         flex-direction: column;
     }
     table{
-        margin-left: 2em;
+        margin-left: 0em;
     }
     
     .city{
@@ -124,16 +137,17 @@ img{
     }
     .one img{
         float:right;
-        width: 130px;
+        width: 35%;
     }
     .all p{
         word-wrap: break-word;
-        width: 170px;
-        font-size: 21px;
+        width: 30%;
+        font-size: 24px;
         padding: 0px 20px;
     }
     .one{
         display: flex;
+        justify-content: left;
     }
     .all{
         margin-top: 10px;
@@ -141,6 +155,90 @@ img{
    .all .unique{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: left;
+   }
+   .all .unique img{
+    width: 38%;
+   }
+   /* .all img{
+    width: 100px;
+    
+   } */
+}
+
+@media  screen and (max-width : 1200px) {
+    .language p{
+        word-wrap: break-word;
+        width: 60%;
+    }
+    .heads{
+        text-align: left;
+    }
+    body{padding: auto;
+    margin: auto;
+    font-size: 17px;
+}
+    h1{
+        width: 80%;
+        text-align: center;
+        font-size: 47px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+  
+    .city p{
+          /* margin-top: 65px; */
+    word-wrap: break-word;
+    width: 70%;
+    font-size:17px;
+    text-align: center;
+    padding-left: 30px
+
+    }
+    .intro{
+        flex-direction: column;
+    }
+    .intro img{
+        width: 80%;
+    }
+    #par{
+        width: 80%;
+        flex-direction: column;
+    }
+    table{
+        margin-left: 0em;
+    }
+    
+    .city{
+        display: block;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .all img{
+        float:right;
+        width: 25%;
+    }
+    .all p{
+        word-wrap: break-word;
+        width: 35%;
+        font-size: 21px;
+        padding: 0px 20px;
+    }
+    .one{
+        /* display: flex; */
+        justify-content: left;
+    }
+    .all{
+        margin-top: 10px;
+    }
+   .all .unique{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+   }
+   .all .unique img{
+    width: 25%;
    }
    /* .all img{
     width: 100px;
